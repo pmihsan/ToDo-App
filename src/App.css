@@ -1,3 +1,22 @@
+body {
+  text-transform: capitalize;
+}
+
+.parent {
+  height: 657px;
+  background: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.child {
+  background-color: lightblue;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  overflow: auto;
+}
+
 .App {
   text-align: center;
 }
