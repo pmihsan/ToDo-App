@@ -1,4 +1,3 @@
-import "./App.css"
 import Main from "./Todo/todo";
 function App() {
   return (
