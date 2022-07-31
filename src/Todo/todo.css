@@ -1,0 +1,123 @@
+body{
+    display: flex;
+    background-color: #95DBE5FF;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+h1{
+    color: black;
+    text-align: center;
+    font-family: cursive;
+}
+h3{
+    color: black;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    width: 25vw;
+    max-width: auto;
+}
+input[type="text"]:hover {
+    background-color: aliceblue;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+/* ol.center-list{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-position: inside;
+} */
+
+ol {
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form{
+    text-align: center;
+    justify-content:center;
+}
+
+.submit {
+    text-align: center;
+    justify-content:center;
+    font-size: medium;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    color: green;
+    background-color: white;
+}
+
+.submit:hover{ 
+    color: white;
+    background-color: green;
+}
+
+.remove{
+    text-align: center;
+    justify-content:center;
+    font-size: medium;
+    font-weight: bold;
+    border: none;
+    border-radius: 60%;
+    padding: 10px;
+    color: red;
+    background-color: white;
+    border-radius: 10%;
+}
+
+.remove:hover{ 
+    color: white;
+    background-color: red;
+}
+
+.outer{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    margin-top: 50px ;
+}
+
+.container{
+    display: grid;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: #078282FF;
+    border-radius: 15px;
+    width: 50vw;
+    height: auto;
+    max-width: auto;
+}
+
+.box{
+    display: grid;
+    position:relative;
+    align-items: center;
+    justify-content:space-around;
+    margin: auto;
+    background-color: #D9514EFF;
+    border-radius: 15px;
+    width: 50vw;
+    max-width: 50vw;
+    height: auto;
+    min-height: 25vh;
+    overflow: auto;
+}

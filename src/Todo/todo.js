@@ -1,5 +1,5 @@
-import React from "react";
-import { useState } from "react";
+import React , { useState } from "react";
+import "./todo.css";
 
 let globalId = 0;
 
@@ -26,25 +26,29 @@ const Main = () => {
     }; 
 
     return (
-    <div className="parent">
-        <div className="child">
-            <h1>To Do App</h1> 
-            <form onSubmit={addTodo}>
-                <input type="text" value={tasks} onChange={setTaskValue}/>
-                <button type="submit">ADD</button>
-            </form>
-            <ol>
+    <div className="outer">
+        <div className="container">
+            <div className="form">
+                <h1>To Do App</h1> 
+                <form onSubmit={addTodo}>
+                    <input type="text" value={tasks} onChange={setTaskValue}/>
+                    <br></br><br></br><button type="submit" className="submit">ADD</button>
+                </form>
+                <br></br>
+            </div>
+            <div className="box">
                 <h3>To Do's</h3>
-                {todos.map((item) => {
-                    return (
-                        <div key={item.id}>
-                            <li>{item.todo + "   "}</li>
-                            <button onClick={() => deleteTodo(item.id)}>Remove</button>
-                            
-                        </div>
-                    );
-                })}
-            </ol>
+                <ol className="center-list"> 
+                    {todos.map((item) => {
+                        return (
+                            <div key={item.id} className="todos">
+                                <li>{item.todo + "   "} <button onClick={() => deleteTodo(item.id)} className="remove">X</button>  </li>
+                                {/* <button onClick={() => deleteTodo(item.id)} className="remove">X</button> */}
+                            </div>
+                        );
+                    })}
+                </ol>
+            </div>
         </div>
     </div>
     );
